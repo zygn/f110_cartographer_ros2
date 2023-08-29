@@ -32,7 +32,7 @@ ros2 launch f110_cartographer_ros cartographer.launch.py
 
 ## Save your world
 ```bash
-ros2 service call /map_saver/save_map nav2_msgs/srv/SaveMap "{map_topic: map, map_url: my_map, image_format: pgm, map_mode: trinary, free_thresh: 0.25, occupied_thresh: 0.65}"
+ros2 run nav2_map_server map_saver_cli -f my_map
 ```
 Check this article: https://automaticaddison.com/navigation-and-slam-using-the-ros-2-navigation-stack/
 
