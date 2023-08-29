@@ -268,7 +268,7 @@
 
   <!-- Add the remaining xacros -->
 
-  <xacro:include filename="$(find f110_description)/urdf/racecar.gazebo" />
-  <xacro:include filename="$(find f110_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find f110_cartographer_ros2)/cartographer_config/f110_description/urdf/racecar.gazebo" />
+  <xacro:include filename="$(find f110_cartographer_ros2)/cartographer_config/f110_description/urdf/materials.xacro" />
 
 </robot>
