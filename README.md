@@ -33,6 +33,8 @@ ros2 launch f110_cartographer_ros cartographer.launch.py
 ## Save your world
 ```bash
 ros2 run nav2_map_server map_saver_cli -f my_map
+# for foxy (avoid timeout error)
+ros2 run nav2_map_server map_saver_cli -f my_map --ros-args -p save_map_timeout:=5000
 ```
 Check this article: https://automaticaddison.com/navigation-and-slam-using-the-ros-2-navigation-stack/
 
